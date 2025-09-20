@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hi Baby ❤️</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      background: linear-gradient(135deg, #fff5f7, #ffeef2), 
+                  url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #2c2c2c;
+      overflow-x: hidden;
+    }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-custom {
+      border-radius: 20px;
+      border: none;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(8px);
+      animation: fadeInUp 1.2s ease;
+    }
+    h1, h2, h4 {
+      font-family: 'Great Vibes', cursive;
+      color: #b23a48;
+    }
+    .message {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .btn-love {
+      background-color: #b23a48;
+      border: none;
+      color: #fff;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(178, 58, 72, 0.3);
+    }
+    .btn-love:hover {
+      background-color: #922d38;
+      box-shadow: 0 6px 18px rgba(178, 58, 72, 0.5);
+      transform: scale(1.05);
+    }
+    .icon-box {
+      background: #fff0f3;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 1.2s ease forwards;
+    }
+    .icon-box:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    }
+    #confession {
+      display: none;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(50px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.7; }
+      50% { transform: scale(1.2); opacity: 1; }
+      100% { transform: scale(1); opacity: 0.7; }
+    }
+    .divider span {
+      font-size: 1.8rem;
+      color: #b23a48;
+      display: inline-block;
+      animation: pulse 2s infinite;
+    }
+    footer {
+      padding: 1rem;
+      text-align: center;
+      color: #555;
+      font-size: 0.9rem;
+      animation: fadeIn 2s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="container hero">
+    <div class="col-lg-10">
+      <div class="card card-custom p-5">
+        <div class="text-center mb-4">
+          <h1>My Dear Baby</h1>
+          <h4>I'm sorry for always disappointing you</h4>
+        </div>
+
+        <p class="message mb-4 text-center">
+          Can we try again? I would rather fix this than lose you.
+        </p>
+
+        <div class="row text-center mb-4">
+          <div class="col-md-4 mb-3">
+            <div class="icon-box">
+              <h3>🌹</h3>
+              <p class="message">Can we talk about the things that make you irritated with me?</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="icon-box">
+              <h3>💌</h3>
+              <p class="message">I can't do this alone, I need your cooperation to make this work.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="icon-box">
+              <h3>✨</h3>
+              <p class="message">Let's be better for our future.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"><span></span></div>
+
+        <div class="text-center mb-4">
+          <blockquote class="blockquote">
+            <p class="mb-0">“In your smile, I see something more beautiful than the stars.”</p>
+          </blockquote>
+        </div>
+
+        <div class="text-center">
+          <button id="confessBtn" class="btn btn-love btn-lg">Press me</button>
+          <div id="confession" class="mt-3">
+            <h3>
+              I know this few months, we are struggling. Maybe the kilig phase was over but it's normal. I believe the phase we are going through is for us to make stronger, and it will pass.
+              I know we can overcome this, we just need to be more patient and comprise for each other. I believe in you so please believe in me. I can be your punching bag when the world hates you,
+              but I need assurances from you. Sorry for being irritable, I just want to ease your day. I know you're burnt out from work, that's why you get mood swings, but I am your kakampi —
+              why does it feel like it's my fault? The spark will light again between us, so please don't push me whenever you get mad, I have feelings too. Please consider my feelings, I'm your Baby.
+              I miss you, let's fix this na and have a permanent solution. ❤️
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <footer class="mt-4">
+        -Ken.
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    const btn = document.getElementById('confessBtn');
+    const confession = document.getElementById('confession');
+
+    btn.addEventListener('click', function(){
+      if(confession.style.display === 'none' || confession.style.display === '') {
+        confession.style.display = 'block';
+        this.textContent = 'Hide';
+      } else {
+        confession.style.display = 'none';
+        this.textContent = 'Press me';
+      }
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
